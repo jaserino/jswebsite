@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useTransform, motion, useScroll } from 'framer-motion';
+import Wave from '../features/components/Wave';
 
 const LayeredBackground = () => {
   const ref = useRef(null);
@@ -18,9 +19,10 @@ const LayeredBackground = () => {
     >
       <motion.h1
         style={{ y: textY }}
-        className="text-6xl md:text-9xl relative z-10 font-orbitron font-semibold text-yellow-200 "
+        className="text-6xl md:text-9xl relative font-orbitron font-semibold text-yellow-200 z-10 flex "
       >
-        JARED SERINO
+        Hey,
+        <Wave /> I'm Jared
       </motion.h1>
 
       <motion.div
