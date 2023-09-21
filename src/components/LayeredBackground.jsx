@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import Wave from '../features/components/Wave';
 import Nav from './Nav';
+import SideNav from './SideNav';
 
 const LayeredBackground = () => {
   const ref = useRef(null);
@@ -19,6 +20,9 @@ const LayeredBackground = () => {
       <motion.div style={{ y: navY }} className="fixed top-0 w-full z-50">
         <Nav />
       </motion.div>
+      <motion.div className="fixed z-50 right-36 top-40">
+        <SideNav />
+      </motion.div>
 
       <div className="w-full h-screen overflow-hidden relative grid place-items-center">
         <motion.h1
@@ -26,7 +30,8 @@ const LayeredBackground = () => {
           className="text-6xl md:text-9xl relative font-orbitron font-semibold text-yellow-200 z-10 flex drop-shadow-neon "
         >
           Hey,
-          <Wave /> I'm Jared
+          <Wave />
+          I'm Jared
         </motion.h1>
 
         <motion.div

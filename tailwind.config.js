@@ -13,6 +13,15 @@ export default {
           '0px 0px 102px #54CCEC',
           '0px 0px 151px #54CCEC',
         ],
+        sidenavneon: [
+          '0px 0px 7px #54CCEC',
+          '0px 0px 10px #54CCEC',
+          '0px 0px 21px #54CCEC',
+          '0px 0px 42px #54CCEC',
+          '0px 0px 82px #54CCEC',
+          '0px 0px 102px #54CCEC',
+          '0px 0px 151px #54CCEC',
+        ],
       },
       fontFamily: {
         orbitron: ['Orbitron'],
