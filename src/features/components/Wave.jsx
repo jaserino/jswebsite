@@ -12,3 +12,6 @@ const Wave = () => {
 };
 
 export default Wave;
+
+// automatic waving via tailwind
+//<motion.div className="animate-[wave_2s_linear_infinite]">👋🏼</motion.div>

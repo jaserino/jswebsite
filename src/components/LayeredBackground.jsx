@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import Wave from '../features/components/Wave';
 import Nav from './Nav';
-import SideNav from './SideNav';
+import SideNav from '../features/components/SideNav';
 
 const LayeredBackground = () => {
   const ref = useRef(null);
@@ -20,7 +20,7 @@ const LayeredBackground = () => {
       <motion.div style={{ y: navY }} className="fixed top-0 w-full z-50">
         <Nav />
       </motion.div>
-      <motion.div className="fixed z-50 right-36 top-40">
+      <motion.div className="fixed z-50 bottom-0 top-0 left-36 flex flex-col justify-center ">
         <SideNav />
       </motion.div>
 
