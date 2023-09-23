@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 const Wave = () => {
   return (
     <motion.div
-      whileHover={{ rotate: 45 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+      className="animate-[wiggle_1s_ease-in-out_infinite]"
+      // whileHover={{ rotate: 45 }}
+      // transition={{ type: 'spring', stiffness: 300, damping: 30 }}
     >
       👋🏼
     </motion.div>

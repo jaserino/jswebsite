@@ -11,19 +11,25 @@ const SideNav = () => {
         <div className="">
           <a href={CV} download>
             <BsFilePerson
-              className="drop-shadow-sidenavneon animate-[flicker_4s_linear_infinite]"
+              className="drop-shadow-sidenavneon animate-[flicker_4s_linear_infinite] hover:animate-bounce "
               size={35}
             />
           </a>
         </div>
         <div className="">
           <a href="https://www.linkedin.com/in/jaredserino/">
-            <AiOutlineLinkedin className="drop-shadow-sidenavneon" size={35} />
+            <AiOutlineLinkedin
+              className="drop-shadow-sidenavneon hover:animate-bounce"
+              size={35}
+            />
           </a>
         </div>
         <div className="">
           <a href="https://github.com/jaserino">
-            <VscGithub className="drop-shadow-sidenavneon" size={35} />
+            <VscGithub
+              className="drop-shadow-sidenavneon hover:animate-bounce"
+              size={35}
+            />
           </a>
         </div>
       </div>
