@@ -20,7 +20,7 @@ const LayeredBackground = () => {
       <motion.div style={{ y: navY }} className="fixed top-0 w-full z-50">
         <Nav />
       </motion.div>
-      <motion.div className="fixed z-50 bottom-0 top-0 left-36 flex flex-col justify-center ">
+      <motion.div className="fixed z-50 bottom-0 top-0 right-24 flex flex-col justify-center ">
         <SideNav />
       </motion.div>
 
