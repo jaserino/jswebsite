@@ -9,8 +9,8 @@ import {
   PresentationControls,
 } from '@react-three/drei';
 
-const Laptop = () => {
-  const model = useGLTF('./laptop.gltf');
+const Iphone = () => {
+  const model = useGLTF('./iphone.gltf');
 
   // eslint-disable-next-line react/no-unknown-property
   return (
@@ -18,24 +18,24 @@ const Laptop = () => {
       <Environment preset="city" />
       {/* <OrbitControls makeDefault /> */}
       <PresentationControls
-        rotation={[0.13, 0.1, 0]}
+        rotation={[0.15, -0.4, 0]}
         polar={[-0.4, 0.2]}
         azimuth={[-1, 0.75]}
         snap={{ mass: 2, tension: 200 }}
       >
-        <Float rotationIntensity={0.8}>
-          <primitive object={model.scene} position-y={-1.2} />
+        <Float rotationIntensity={0}>
+          <primitive object={model.scene} position={[1, -1.2, 0]} />
           <Html
             transform
-            distanceFactor={1.17}
-            position={[0, 0.33, -1.4]}
-            rotation-x={-0.256}
+            distanceFactor={1}
+            position={[1.15, 0.6, 0.05]}
+            className=""
           >
             <iframe
-              src="https://drive.google.com/file/d/1HD21Z6RrBPn1IdNx4FZVz9hhDw9w9NN4/preview"
-              width="1024"
-              height="670"
-              className=""
+              src="https://wolfpacktravel.netlify.app/"
+              width="580"
+              height="1180"
+              className="rounded-lg"
             ></iframe>
           </Html>
         </Float>
@@ -44,4 +44,4 @@ const Laptop = () => {
   );
 };
 
-export default Laptop;
+export default Iphone;

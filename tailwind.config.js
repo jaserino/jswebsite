@@ -28,7 +28,6 @@ export default {
       },
       fontFamily: {
         orbitron: ['Orbitron'],
-        zeb: ['zebulon'],
       },
 
       colors: {

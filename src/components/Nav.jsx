@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <div className="flex justify-around p-6 font-zeb text-white cursor-pointer drop-shadow-textneon ">
+    <div className="flex justify-around p-6 text-white cursor-pointer drop-shadow-textneon font-orbitron ">
       <div className="mr-80 hover:drop-shadow-hoverneon">LOGO</div>
 
       <div className="flex gap-6 ">
