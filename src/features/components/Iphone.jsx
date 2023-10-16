@@ -28,7 +28,7 @@ const Iphone = () => {
           <Html
             transform
             distanceFactor={1}
-            position={[1.15, 0.6, 0.05]}
+            position={[1.15, 0.08, 0.05]}
             className=""
           >
             <iframe

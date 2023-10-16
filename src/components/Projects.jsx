@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
+
 import ProjectElement from '../features/components/ProjectElement';
 
 const Projects = () => {
@@ -8,46 +9,30 @@ const Projects = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ['1%', '-95%']);
+  const x = useTransform(scrollYProgress, [0, 1], ['4%', '-70%']);
 
   const projects = [
     {
-      url: './projpic/ss1.png',
+      urls: ['./projpic/ss1.png', './projpic/ss2.png', './projpic/ss3.png'],
       id: 1,
+      title: 'Solar Study',
     },
     {
-      url: './projpic/ss2.png',
-
+      urls: ['./projpic/ps1.png', './projpic/ps2.png', './projpic/ps3.png'],
       id: 2,
+      title: 'Plant Social',
     },
+
     {
-      url: './projpic/ss3.png',
-      title: 'Solar Study',
+      urls: './projpic/ss2.png',
       id: 3,
-    },
-    {
-      url: './projpic/ps1.png',
-      title: 'Solar Study',
-      id: 4,
-    },
-    {
-      url: './projpic/ps2.png',
-      title: 'Solar Study',
-      id: 5,
-    },
-    {
-      url: './projpic/ps3.png',
-      title: 'Solar Study',
-      id: 6,
+      title: 'Snow Buddies',
     },
   ];
 
   return (
-    <section
-      ref={targetRef}
-      className="relative h-[300vh] bg-[radial-gradient(at_center_top,_var(--tw-gradient-stops))] from-[#212121] from-20% to-[#101010]to-80%"
-    >
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+    <section ref={targetRef} className="relative h-[300vh] ">
+      <div className="sticky top-0 h-screen flex items-center overflow-hidden bg-[radial-gradient(at_center_top,_var(--tw-gradient-stops))] from-cyber-dark from-20% to-[#101010] to-80%">
         <motion.div style={{ x }} className="flex gap-96">
           {projects.map((project) => {
             return <ProjectElement project={project} key={project.id} />;
